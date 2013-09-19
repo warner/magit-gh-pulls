@@ -104,9 +104,7 @@
             (when (and have-commits (not applied))
               (apply #'magit-git-section
                      'request nil 'magit-wash-log "log"
-                     (append magit-git-log-options
-                             (list
-                              (format "%s..%s" base-sha head-sha))))))))))
+                     (list magit-log-format (format "%s..%s" base-sha head-sha)))))))))
   (insert "\n"))
 
 (defun magit-gh-pulls-guess-topic-name (req)
