@@ -30,7 +30,7 @@
 ;;   $ git config --add magit.extension gh-pulls
 ;;     # or whatever is required to load that extension in magit for
 ;;     # this repository
-;;   $ git config magit.gh-pulls-repo = <user>/<repo>
+;;   $ git config magit.gh-pulls-repo <user>/<repo>
 ;;     # your github repository
 
 ;; and of course, load magit-gh-pulls.el
